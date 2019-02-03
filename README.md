@@ -1,6 +1,6 @@
 # Zell's personal CSS Reset
 
-This repository contains the CSS Reset file that I use for all my frontend projects.
+This repository contains the CSS Reset file that I use for all my frontend projects. For more info, read this [blog post](https://zellwk.com/blog/css-reset).
 
 ## Installation
 
