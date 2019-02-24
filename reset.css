@@ -53,6 +53,7 @@ button {
 button {
   border-radius: 0;
   padding: 0.75em 1em;
+  background-color: transparent;
 }
 
 button * {
