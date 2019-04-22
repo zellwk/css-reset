@@ -80,11 +80,12 @@ button * {
 /***********************************
  Easy responsive for media elements
  ***********************************/
-embed,
-iframe,
 img,
+svg,
+iframe,
+video,
 object,
-video {
+embed {
   display: block;
   max-width: 100%;
 }
