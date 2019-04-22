@@ -67,9 +67,10 @@ button {
 
 /* Some defaults for one-liner buttons */
 button {
-  border-radius: 0;
   padding: 0.75em 1em;
+  border-radius: 0;
   line-height: 1;
+  background-color: transparent;
 }
 
 button * {
