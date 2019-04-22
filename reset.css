@@ -1,4 +1,6 @@
-/* Set box-sizing to border-box for all elements */
+/*******************
+ Box Sizing
+ *******************/
 html {
   box-sizing: border-box;
 }
@@ -9,7 +11,9 @@ html {
   box-sizing: inherit;
 }
 
-/* Reset margins and paddings on most elements */
+/****************************
+ Generic Margins and Paddings
+ ****************************/
 body,
 h1,
 h2,
@@ -29,12 +33,16 @@ hr {
   padding: 0;
 }
 
-/* Removes discs from ul */
+/*******************
+ Lists
+ *******************/
 ul {
   list-style: none;
 }
 
-/* Reset forms and buttons */
+/*******************
+ Forms and buttons
+ *******************/
 input,
 textarea,
 select,
@@ -44,22 +52,33 @@ button {
   letter-spacing: inherit;
 }
 
+/* I usually expand input and textarea to full-width */
+input[type="text"],
+textarea {
+  width: 100%;
+}
+
+/* More friendly border */
 input,
 textarea,
 button {
   border: 1px solid gray;
 }
 
+/* Some defaults for one-liner buttons */
 button {
   border-radius: 0;
   padding: 0.75em 1em;
+  line-height: 1;
 }
 
 button * {
   pointer-events: none;
 }
 
-/* Easy responsive for media elements */
+/***********************************
+ Easy responsive for media elements
+ ***********************************/
 embed,
 iframe,
 img,
@@ -69,18 +88,24 @@ video {
   max-width: 100%;
 }
 
-/* Useful table styles */
+/*******************
+ Useful table styles
+ *******************/
 table {
   table-layout: fixed;
   width: 100%;
 }
 
-/* Hidden */
+/*******************
+ The hidden attribute
+ *******************/
 [hidden] {
   display: none !important;
 }
 
-/* noscript styles */
+/*******************
+ Noscript
+ *******************/
 noscript {
   display: block;
   margin-bottom: 1em;
