@@ -11,6 +11,17 @@ html {
   box-sizing: inherit;
 }
 
+/*******************
+ Core body defaults
+ @see https://hankchizljaw.com/wrote/a-modern-css-reset/
+ *******************/
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
 /****************************
  Generic Margins and Paddings
  ****************************/
@@ -28,7 +39,10 @@ p,
 pre,
 blockquote,
 figure,
-hr {
+figcaption,
+hr,
+dl,
+dd {
   margin: 0;
   padding: 0;
 }
@@ -68,8 +82,8 @@ button {
 /* Some defaults for one-liner buttons */
 button {
   padding: 0.75em 1em;
+  line-height: inherit;
   border-radius: 0;
-  line-height: 1;
   background-color: transparent;
 }
 
@@ -102,7 +116,8 @@ table {
  The hidden attribute
  *******************/
 [hidden] {
-  display: none !important;
+  opacity: 0;
+  visibility: hidden;
 }
 
 /*******************
@@ -119,4 +134,34 @@ noscript {
  *******************/
 [tabindex="-1"] {
   outline: none !important;
+}
+
+/*******************
+ Remove animations and transitions
+ @see https://hankchizljaw.com/wrote/a-modern-css-reset/
+ *******************/
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/*******************
+ * Screen-ready only class to hide content visually
+ * Solution by Joe Watkins.
+ * More info: https://zellwk.com/blog/hide-content-accessibly/
+ *******************/
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  white-space: nowrap;
 }
