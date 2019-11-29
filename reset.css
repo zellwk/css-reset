@@ -152,7 +152,7 @@ noscript {
 /*******************
  * Screen-ready only class to hide content visually
  * Solution by Joe Watkins.
- * More info: https://zellwk.com/blog/hide-content-accessibly/
+ * @see https://zellwk.com/blog/hide-content-accessibly/
  *******************/
 .sr-only {
   position: absolute;
