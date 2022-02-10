@@ -3,48 +3,45 @@
  *******************/
 html {
   box-sizing: border-box;
+  line-height: 1.5;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
-/*******************
- Core body defaults
- @see https://hankchizljaw.com/wrote/a-modern-css-reset/
- *******************/
+html,
 body {
-  min-height: 100vh;
+  height: 100%;
+}
+
+body {
+  min-height: 100vh; /* Useful for body to fill the viewport */
   scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
+  text-rendering: optimizeLegibility;
 }
 
 /****************************
- Generic Margins and Paddings
+ Remove default margin and paddings
  ****************************/
-body,
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/****************************
+ Avoid text overflows
+ ****************************/
+p,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
-ul,
-ol,
-li,
-p,
-pre,
-blockquote,
-figure,
-figcaption,
-hr,
-dl,
-dd {
-  margin: 0;
-  padding: 0;
+h6 {
+  overflow-wrap: break-word;
 }
 
 /*******************
@@ -67,7 +64,7 @@ button {
 }
 
 /* I usually expand input and textarea to full-width */
-input[type="text"],
+input[type='text'],
 textarea {
   width: 100%;
 }
@@ -77,6 +74,14 @@ input,
 textarea,
 button {
   border: 1px solid gray;
+}
+
+/* Friendly password dots
+ * See https://pqina.nl/blog/styling-password-field-dots/
+ */
+input[type='password'] {
+  font-family: Verdana;
+  letter-spacing: 0.125em;
 }
 
 /* Some defaults for one-liner buttons */
@@ -92,18 +97,17 @@ button * {
 }
 
 /***********************************
- Easy responsive for media elements
+ Better defaults for media elements
  ***********************************/
 img,
-iframe,
+picture,
 video,
+iframe,
+canvas,
 object,
-embed {
-  display: block;
-  max-width: 100%;
-}
-
+embed,
 svg {
+  display: block;
   max-width: 100%;
 }
 
@@ -135,7 +139,7 @@ noscript {
 /*******************
  Tabindex
  *******************/
-[tabindex="-1"] {
+[tabindex='-1'] {
   outline: none !important;
 }
 
