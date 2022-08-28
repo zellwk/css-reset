@@ -1,6 +1,6 @@
 {
   "name": "@zellwk/css-reset",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Zell's personal CSS reset",
   "main": "reset.css",
   "scripts": {
@@ -11,7 +11,10 @@
     "type": "git",
     "url": "git+https://github.com/zellwk/css-reset.git"
   },
-  "keywords": ["CSS", "reset"],
+  "keywords": [
+    "CSS",
+    "reset"
+  ],
   "author": "Zell Liew <zellwk@gmail.com> (https://zellwk.com)",
   "license": "MIT",
   "bugs": {
