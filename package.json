@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/zellwk/css-reset#readme",
   "devDependencies": {
-    "np": "^4.0.2"
+    "np": "^7.6.2"
   }
 }
