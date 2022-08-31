@@ -1,6 +1,6 @@
 {
   "name": "@zellwk/css-reset",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Zell's personal CSS reset",
   "main": "reset.css",
   "scripts": {
