@@ -157,11 +157,13 @@ noscript {
 }
 
 /*******************
- * Screen-ready only class to hide content visually
+ * Hides content visually.
+ * So it's only available to screen readers... and bots 🤖
  * Solution by Joe Watkins.
  * @see https://zellwk.com/blog/hide-content-accessibly/
  *******************/
-.sr-only {
+.sr-only,
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: auto;
